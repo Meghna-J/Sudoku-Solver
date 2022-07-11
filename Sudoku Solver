@@ -22,9 +22,9 @@ bool IsSafeToPut(int mat[][9],int i,int j,int no,int n){
 	int si=(i/n)*n;
 	int sj=(j/n)*n;
 
-	for(int r=si;r<si;r++)
+	for(int r=si;r<si+n;r++)
 	{
-		for(int c=sj;c<sj;c++)
+		for(int c=sj;c<sj+n;c++)
 		{
 			if(mat[r][c]==no){
 				return false;
